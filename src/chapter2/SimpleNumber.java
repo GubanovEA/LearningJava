@@ -11,7 +11,7 @@ public class SimpleNumber {
         int[] array = new int[num];
         int value = 2;
 
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = value;
             value = value + 1;
         }
@@ -22,18 +22,15 @@ public class SimpleNumber {
         ArrayList simpNumb = new ArrayList();
         int div = 0;
 
-        for (int i = 0; i < num; i++){
-            for (int j = 0; i < i; j++) {
-                if (array[i] % array[j] == 0) {
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < i; j++) {
+                if (array[i] % array[j] == 0)
                     div = div + 1;
-                }
             }
-            if (div == 0) {
+            if (div == 0)
                 simpNumb.add(array[i]);
-            }
-            else {
+            else
                 div = 0;
-        }
         }
         System.out.println(simpNumb);
     }
