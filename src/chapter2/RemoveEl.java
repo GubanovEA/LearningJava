@@ -26,9 +26,8 @@ public class RemoveEl {
         System.out.print("Inserted array elements:");
         System.out.println(SubArray2);
 
-        Scanner input1 = new Scanner(System.in);
         System.out.println("Enter Remove Element: ");
-        int RemEl = input1.nextInt();
+        int RemEl = input.nextInt();
 
         int range = SubArray2.size();
 
