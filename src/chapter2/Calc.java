@@ -2,6 +2,9 @@ package chapter2;
 
 import java.util.Scanner;
 
+//        Заполните массив случайным числами и выведите максимальное, минимальное и среднее значение.
+//        Для генерации случайного числа используйте метод Math.random(),
+//        который возвращает значение в промежутке [0, 1].
 public class Calc {
     public static void main(String[] args) {
         float min, avg, max, sr;
