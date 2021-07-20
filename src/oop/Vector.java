@@ -3,12 +3,12 @@ package oop;
 import java.lang.Math;
 
 public class Vector { // после финальных сделал "Class can be a record"
-//    private final double x; // идея сказала, что они должны быть финальными
-//    private final double y;
-//    private final double z;
-    private  double x; // идея сказала, что они должны быть финальными
-    private  double y;
-    private  double z;
+    private final double x; // идея сказала, что они должны быть финальными
+    private final double y;
+    private final double z;
+//    private  double x; // идея сказала, что они должны быть финальными
+//    private  double y;
+//    private  double z;
 
 
     public Vector(double x, double y, double z){
@@ -52,6 +52,13 @@ public class Vector { // после финальных сделал "Class can b
         );
     }
 
+    public double[] showVac(){
+        double[] Result = new double[3];
+        Result[0] = x;
+        Result[1] = y;
+        Result[2] = z;
+        return Result;
+    }
     public static Vector[] createArrVec(int n){
         Vector[] Vectors = new Vector[n];
         for(int i =0; i < n; i++){
@@ -65,12 +72,12 @@ public class Vector { // после финальных сделал "Class can b
         Vector Vec2 = new Vector(2, 3, 4);
         System.out.println(Vec1.lengthVector());
         System.out.println(Vec1.scalProd(Vec2));
-        Vector ResVec = Vec1.vecProd(Vec2);
         //System.out.println(ResVec.x, ResVec.y, ResVec.z);  //не дал мне так сделать
         System.out.println(Vec1.vecProd(Vec2));
         System.out.println(Vec1.cos(Vec2));
         System.out.println(Vec1.add(Vec2));
         System.out.println(Vec1.subtr(Vec2));
         Vector[] vector = createArrVec(5);
+        System.out.println(Vec1.showVac()); // Implicit call to 'toString()' on array returned by call to 'Vec1.showVac()'
     }
 }
