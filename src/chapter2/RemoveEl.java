@@ -29,9 +29,7 @@ public class RemoveEl {
         System.out.println("Enter Remove Element: ");
         int RemEl = input.nextInt();
 
-        int range = SubArray2.size();
-
-        for (int i = 0; i < (range - 1); i++) { // работает не совсем правильно, у меня есть предположения, ноя  хз
+        for (int i = 0; i < SubArray2.size(); i++) { // работает не совсем правильно, у меня есть предположения, ноя  хз
             if (SubArray2.get(i) == RemEl)
                 SubArray2.remove(i);
         }
